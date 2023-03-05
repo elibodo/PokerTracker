@@ -4,9 +4,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Poker Tracker</title>
 </head>
 <body>
-    <h1>Poker Tracker</h1>
+    <nav class="header">
+        <div class="header_container">
+            <div class="header_mobile" id="mobile_header">
+                <!-- for a mobile menu that i have not made -->
+                <!--  -->
+            </div>
+            <a href="index.html" id="poker_logo"><h1>Poker Tracker</h1></a>
+            <ul class="header_menu">
+                <!-- an overview of everything. including a graph, recent sessions, and overall profit/loss -->
+                <li class="header_item">
+                    <a href="index.html" class="header_links">Dashboard</a>
+                </li>
+
+                <!-- detailed list of all sessions. will include limits played, amount of time, and outcomes -->
+                <!-- toggle between cash and tournament wins, also show all -->
+                <li class="header_item">
+                    <a href="summary.html" class="header_links">Summary</a>
+                </li>
+
+                <!-- user information -->
+                <li class="header_item">
+                    <a href="profile.html" class="header_links">Profile</a>
+                </li>
+                
+                <!-- input a new session -->
+                <li class="header_btn">
+                    <a href="/" class="new_session_btn">New Session</a>
+                </li>
+
+                <!-- sign in/sign up -->
+                <li class="header_btn">
+                    <a href="/" class="sign_up_in_btn">Sign In/Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 </body>
 </html>
