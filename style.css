@@ -3,8 +3,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: 0;
-    outline: 0;
     text-decoration: none;
     list-style: none;
 }
@@ -13,7 +11,8 @@
     --color-1: #1e242e;
     --color-2: #d7e8ff;
     --color-3: #0e141c;
-    --transition: all 400s ease;
+    --color-4: #fff;
+    --transition: all 0.3s ease;
 }
 
 .header {
@@ -22,7 +21,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -41,15 +40,15 @@
 
 #poker_logo {
     background-color: var(--color-2);
-    cursor: pointer;
-    align-items: center;
-    background-size: auto;
-    font-size: 1.5rem;
+    background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.5rem;
 }
 
 .fa-gem {
@@ -61,7 +60,6 @@
     align-items: center;
     list-style: none;
     text-align: center;
-    gap: 2rem;
 }
 
 .header_item {
@@ -89,7 +87,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 20px;
+    white-space: nowrap;
+    padding: 15px 15px;
     height: 100%;
     width: 100%;
     border: none;
@@ -97,9 +96,16 @@
     border-radius: 4px;
     background: var(--color-2);
     color: var(--color-1);
+    
 }
 
 .button:hover {
-    color: red;
+    background: var(--color-3);
+    color: var(--color-4);
+    transition: var(--transition);
+}
+
+.header_links:hover {
+    color: var(--color-4);
     transition: var(--transition);
 }
