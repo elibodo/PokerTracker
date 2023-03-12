@@ -4,16 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Poker Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="summary.css">
 
-    <!-- <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
-    <script>
-        $(function(){
-            $("#header").load("index.html");
-        });
-    </script> -->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <!-- <div id="header"></div> -->
+    <nav class="header">
+        <div class="header_container">
+            <!-- an overview of everything. including a graph, recent sessions, and overall profit/loss -->
+            <a href="index.html" id="poker_logo"><h1>Poker Tracker</h1></a>
+
+            <div class="header_mobile" id="mobile_header">
+                <!-- for a mobile menu that i have not made -->
+                <!--  -->
+            </div>
+
+            <ul class="header_menu">
+                <!-- detailed list of all sessions. will include limits played, amount of time, and outcomes -->
+                <!-- toggle between cash and tournament wins, also show all -->
+                <li class="header_item">
+                    <a href="summary.html" class="header_links">Summary</a>
+                </li>
+
+                <!-- user information -->
+                <li class="header_item">
+                    <a href="profile.html" class="header_links">Profile</a>
+                </li>
+                
+                <!-- input a new session -->
+                <li class="header_btn">
+                    <a href="/" class="button">New Session</a>
+                </li>
+
+                <!-- sign in/sign up -->
+                <li class="header_btn">
+                    <a href="/" class="button">Sign In</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="body">
+        <div class="tournament_info">
+            <h1>Graph?</h1>
+            
+        </div>
+        <div class="all_info">
+
+        </div>
+    </nav>
+
 </body>
 </html>
